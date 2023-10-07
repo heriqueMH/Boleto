@@ -34,7 +34,8 @@ class Boleto {
     }
 
     public double calcularValorAPagar() {
-        return valor + juros;
+        double valorPagar = valor + juros;
+        return valorPagar;
     }
 
     public void pagar() {
@@ -46,18 +47,25 @@ class Boleto {
         } else {
             status = true; // Boleto foi pago em dia
         }
+
+        status = true;
+        valor = 0;
+        juros = 0;
+
     }
 
-    public String statusBoleto(boolean status, int diasAtraso){
+    public String statusBoleto(boolean status, int diasAtraso) {
         if (status) {
             return "Status: Boleto pago.";
-        }if (diasAtraso == 0){
+        } else if (diasAtraso == 0) {
             return "Status: Boleto não foi pago.";
-        }
-         else {
+        } else if (diasAtraso > 0) {
             return "Status: Boleto atrasado.";
+        } else {
+            return "Status: Boleto com dados inválidos.";
         }
     }
+    
 
     public void mostrarDados() {
         System.out.println("Dados do Boleto:");
