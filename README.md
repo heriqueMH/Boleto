@@ -1,18 +1,22 @@
-## Getting Started
+### README - java-gerador-boleto
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Java - Gerador de Boletos 💳
 
-## Folder Structure
+Projeto Java para geração de boletos bancários, simulando emissão de cobranças com informações personalizadas.
 
-The workspace contains two folders by default, where:
+## ✨ Funcionalidades
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Cadastro de informações do pagador
+- Cadastro de informações do beneficiário
+- Geração de boleto com dados preenchidos
+- Simulação de cálculo de juros e multa
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 🛠️ Tecnologias Utilizadas
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- Java 17
+- Orientação a Objetos
 
-## Dependency Management
+## 🚀 Como executar o projeto
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+git clone https://github.com/seu-usuario/java-gerador-boleto.git
+cd java-gerador-boleto
